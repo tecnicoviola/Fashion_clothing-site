@@ -1,0 +1,117 @@
+id,images,title,region,price
+_001,_001.jpg,Nath,north,₹1699
+_002,_002.jpg,Pagdi,north,₹2799
+_003,_003.jpg,Rajasthani gold jwellery,north,₹1999
+_004,_004.jpg,Sarafa,north,₹1899
+_005,_005.jpg,Jaipuri Gota Saree & Kurta,north,₹3999
+_006,_006.jpg,White cotton shirt,north,₹1599
+_007,_007.jpg,Kashmiri Shawl and scarf,north,₹3499
+_008,_008.jpg,Dhoti and Kurta ,north,₹2699
+_009,_009.jpg,Silk Saree and White kurta,north,₹1799
+_010,_010.jpg,Ladakh tradition dress,north,₹1499
+_011,_011.jpg,Rajasthani Ghagra,north,₹2899
+_012,_012.jpg,Rajasthani Bandhej lehenga,north,₹1399
+_013,_013.jpg,Rajasthani Rajputi lehenga,north,₹1699
+_014,_014.jpg,Jaipuri cotton lehenga,north,₹1799
+_015,_015.jpg,Rajasthani dulhan lehenga,north,₹2999
+_016,_016.jpg,Jaipuri gota patti lehenga,north,₹3999
+_017,_017.jpg,Traditional Rajasthani lehenga,north,₹5999
+_018,_018.jpg,Rajasthani cotton lehenga choli,north,₹3999
+_019,_019.jpg,Rajasthani angrakha turban,north,₹3799
+_020,_020.jpg,Sherwani,north,₹1599
+_021,_021.jpg,Bhagarpuri Silk saree,north,₹1699
+_022,_022.jpg,Royal Sherwani,north,₹999
+_023,_023.jpg,Kurta Red,north,₹1199
+_024,_024.jpg,Tussar Silk Saree,north,₹2299
+_025,_025.jpg,Yellow kurti,north,₹3999
+_026,_026.jpg,Royal attire green,north,₹1799
+_027,_027.jpg,Blue Patiala Dress,north,₹2699
+_028,_028.jpg,Kashmir pehran,north,₹3199
+_029,_029.jpg,Rajasthani lehanga,north,₹5199
+_030,_030.jpg,White shirt,north,₹1199
+_031,_031.jpg,Banarasi saree,north,₹2899
+_032,_032.jpg,Ladakh tradition couple dress,north,₹7999
+_033,_033.jpg,Ladakh changpa,north,₹499
+_034,_034.jpg,Taranga Kashmir,north,₹5899
+_035,_035.jpg,Phera Kashmir,north,₹1499
+_036,_036.jpg,Kasaba kashmir,north,₹1999
+_037,_037.jpg,Headgear Kashmir,north,₹1599
+_038,_038.jpg,Gujjars Kashmir,north,₹1299
+_039,_039.jpg,Headdress Ladakh,north,₹1899
+_040,_040.jpg,Green saree,north,₹1099
+_041,_041.jpg,Jaipuri lehenga choli,north,₹2199
+_042,_042.jpg,Rajasthani cotton lehenga choli,north,₹5199
+_043,_043.jpg,Kashmiri Traditional Wear,north,₹1699
+_044,_044.jpg,Border Traditional Saree,north,₹2199
+_045,_045.jpg,Casual Sarees,north,₹2299
+_046,_046.jpg,Ethnic Wear Saree,north,₹1299
+_047,_047.jpg,Banarasi Saree,north,₹899
+_048,_048.jpg,Salwar Kameez,north,₹1199
+_049,_049.jpg,Saree red and white,north,₹1399
+_051,_051.jpg,Kerala Dhoti-Shirt,south,₹2299
+_052,_052.jpg,Kerala Mundu Saree,south,₹2299
+_053,_053.jpg,Andhra Pradesh langa-voni,south,₹1899
+_054,_054.jpg,Kerala Dhoti,south,₹1199
+_055,_055.jpg,Orissa sambalpuri saree,south,₹2199
+_056,_056.jpg,Tamil Nadu Saree,south,₹3399
+_057,_057.jpg,Tamil Nadu Pavada,south,₹4499
+_058,_058.jpg,Maharashtra Nauvari Saree,south,₹5199
+_059,_059.jpg,Maharashtra Nauvari Saree,south,₹2299
+_060,_060.jpg,Kerela mundu men,south,₹2899
+_061,_061.jpg,Kerela mundu ,south,₹2199
+_062,_062.jpg,Kerala Mundu and Neraithi ,south,₹3199
+_063,_063.jpg,Kerela Mundu and Neraithi ,south,₹3399
+_064,_064.jpg,Tamil Nadu Kurti and lehanga,south,₹2999
+_065,_065.jpg,Tamil Nadu saree,south,₹1199
+_066,_066.jpg,Tamil Nadu saree,south,₹5599
+_067,_067.jpg,Chattisgarh_tribal,south,₹4499
+_068,_068.jpg,Begali Dhoti,east,₹3899
+_069,_069.jpg,Bengali  Couple Saree and Dhoti-Kurta,east,₹6699
+_070,_070.jpg,Bengali Dhoti,east,₹699
+_071,_071.jpg,Bengali Dhoti,east,₹899
+_072,_072.jpg,Bengali Saree,east,₹1299
+_073,_073.jpg,Bengali Saree,east,₹1399
+_074,_074.jpg,Bengali Saree,east,₹1999
+_075,_075.jpg,Bengali Saree,east,₹1799
+_076,_076.jpg, kurta Pajama,east,₹1499
+_078,_078.jpg,North-East Chakhesang,north-east,₹2599
+_079,_079.jpg,Nagaland Chuchuyimlang,north-east,₹1699
+_080,_080.jpg,Nagaland Mao Naga Men,north-east,₹1399
+_081,_081.jpg,Nagaland Mao Naga tribe,north-east,₹2199
+_082,_082.jpg,Nagaland Mao Traditional Dress,north-east,₹2299
+_083,_083.jpg,Naga Shawl,north-east,₹2599
+_084,_084.jpg,Tripura Women Traditional,north-east,₹3599
+_085,_085.jpg,Tripura Phanek-Skirt,north-east,₹3899
+_086,_086.jpg,Northeast Risa,north-east,₹3999
+_087,_087.jpg,Northeast Phanek-Risa,north-east,₹1899
+_088,_088.jpg,Assam Mekhla-Chador,north-east,₹1599
+_089,_089.jpg,Casual Wear,north-east,₹1199
+_090,_090.jpg,Northeast_men,north-east,₹2299
+_091,_091.jpg,Northeast Shawl,north-east,₹3399
+_092,_092.jpg,Sikkim Traditional Dress,north-east,₹3799
+_093,_093.jpg,Tripura Riani,north-east,₹4799
+_094,_094.jpg,Tripura Risa-Rinai,north-east,₹4599
+_095,_095.jpg,Tripura Couple Dress,north-east,₹4999
+_096,_096.jpg,Tripura Blouse-Rinai,north-east,₹3999
+_097,_097.jpg,Tripura Women Winter-Wear,north-east,₹3499
+_098,_098.jpg,Tripura Women Saree,north-east,₹2399
+_099,_099.jpg,Blazer ,western,₹3699
+_100,_100.jpg,Blue coat ,western,₹2799
+_101,_101.jpg,Skirt Top formal ,western,₹2399
+_102,_102.jpg,One piece dress ,western,₹1499
+_103,_103.jpg,One piece dress and cowboy shoes ,western,₹4899
+_104,_104.jpg,Red Black One Piece ,western,₹3399
+_105,_105.jpg,Jeans Top women,western,₹2299
+_106,_106.jpg,Kurti Jeans,western,₹1599
+_107,_107.jpg,Jeans Top set couple,western,₹4199
+_108,_108.jpg,Two piece top with jeans,western,₹2999
+_109,_109.jpg,Blue blazer with pants,western,₹3799
+_110,_110.jpg,Stylish Pant Shirt,western,₹4599
+_111,_111.jpg,Blue Pant and Shirt,western,₹3399
+_112,_112.jpg,Denim Shirt and Pants,western,₹3399
+_113,_113.jpg,Grey Two Piece Suit,western,₹4499
+_114,_114.jpg,Shirt and Jeans,western,₹3699
+_115,_115.jpg,Brown Blazer and pants,western,₹2299
+_116,_116.jpg,Grey Two Piece Formals,western,₹2999
+_117,_117.jpg,Black Cheque Formals,western,₹3999
+_118,_118.jpg,Jeans Top fancy,western,₹3499
