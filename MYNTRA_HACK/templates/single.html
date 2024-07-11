@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fosters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Fashion Hub Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+
+
+   
+    <link rel=" shortcut icon" href="{{ url_for( 'static' ,filename='images/favicon.ico')}}" >
+    <!-- Custom Theme files -->
+    <link rel="stylesheet" href="{{ url_for ( 'static',filename='others/aos/aos.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for ( 'static',filename='others/animate.css/animate.min.css/aos.css') }}"> 
+
+    <link rel="stylesheet" href="{{ url_for ( 'static',filename='others/glightbox/css/glightbox.min.css') }}"> 
+
+    <link rel="stylesheet" href="{{ url_for ( 'static',filename='others/swiper/swiper-bundle.min.css') }}">
+    
+    <link rel="stylesheet" href="{{ url_for ( 'static',filename='css/bootstrap.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for ('static' , filename='css/shop.css')}}" >
+    <link rel="stylesheet" href="{{ url_for ('static' , filename='css/owl.carousel.min.css')}}">
+    <!-- Owl-Carousel-CSS -->
+    <link rel="stylesheet" href="{{ url_for ('static' , filename= 'css/style.css')}}"  >
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{ url_for ('static' , filename= 'css/fontawesome-all.min.css')}}"> 
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <!-- //online-fonts -->
+    
+    <!--style of this page-->
+    <style>
+    .prod{
+        height: 300px;
+        box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    .prod:hover {
+        box-shadow: 0 0 11px rgba(35, 119, 158, 0.2); 
+    }
+
+     .cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+/*.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-quantity-input {
+    width: 35%;
+} */
+.cart-quantity-input{
+    resize: none;
+    width:55px;
+    height:28px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+     <div class="container">
+            <!-- top nav -->
+         <!---   <nav class="top_nav d-flex pt-3 pb-1">-->
+                <!-- logo -->
+                <h1>
+                    <!-- <a class="navbar-brand" href="index.html">fh
+                    </a> -->
+                </h1>
+                
+            <!-- Voice Search Modal -->
+            {% include 'voice.html' %}
+
+             <!-- ADD CART MODEL -->
+            {% include 'voice_add.html' %}
+           
+            <!-- //top nav -->
+            <!-- bottom nav -->
+            <nav class="navbar navbar-expand-lg navbar-light   top_nav d-flex pt-3 pb-1 ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                  <!-- logo -->
+                  <h1>
+                    <img src="{{url_for('static',filename='images/log.png' )}}" style="max-height: 65px;">
+                  <!--  <a class="navbar-brand" href="index.html">fh
+                    </a>-->
+                </h1>
+                <!-- //logo -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav " style="margin-left: auto;">
+                        <li class="nav-item">
+                            <a class="nav-link  active" href="/">HOME
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown has-mega-menu" >
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SENIOR</a>
+                            <div class="dropdown-menu" >
+                                <div class="px-0 container">
+                                    <div class="row">
+                                        
+                                            <a class="dropdown-item" href="/region/north">North</a>
+                                            <a class="dropdown-item" href="/region/south">South</a>
+                                            <a class="dropdown-item" href="/region/north-east">North-East</a>
+                                            <a class="dropdown-item" href="/region/western">Western</a>
+                                        
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        <li class="nav-item dropdown has-mega-menu" style="position:static;">
+                            <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">KIDS</a>
+                           
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <div class="w3ls_right_nav ml-auto d-flex">
+                        <div class="nav-icon d-flex">
+                        <!-- Search Modal  -->
+                        <a class="text-dark login_btn align-self-center mx-3" href="#mySearch_btn" data-toggle="modal" data-target="#mySearch_btn">
+                            <i class="fas fa-microphone"></i>
+                        </a>
+                         <!-- sigin and sign up -->
+                         <a class="text-dark login_btn align-self-center mx-3" href="#myModal_btn" data-toggle="modal" data-target="#myModal_btn">
+                            <i class="far fa-user"></i>
+                        </a>
+                        <!-- sigin and sign up -->
+                          <!-- shopping cart -->
+                          <div class="cart-mainf">
+                            <div class="hubcart hubcart2 cart cart box_1">
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart">
+                                    <input type="hidden" name="display" value="1">
+                                    <button class="btn top_hub_cart mt-1" type="submit" name="submit" value="" title="Cart">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- //shopping cart ends here -->
+                        </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <!-- //bottom nav -->
+        </div>
+        <!-- //header container -->
+    </header>
+<body>
+<div class="container">
+    <div class="card p-4">
+       
+    
+    {% for i in data.index %}
+    <div class="row">
+        <div class="col-5">
+            <!-- Photo -->
+            <img src="{{data['images'][i]}}" alt="image" width="100%" height="auto" style="object-fit: cover;">
+        </div>
+        <div class="col-7">
+            <!-- Details -->
+            <h2 style="font-size: 2em;color: coral;" class="mt-3">{{data['title'][i]}}</h3>
+            <h3 style="font-size: 1.5em;" class="mt-2"><strong style="color: #661243;">Price: </strong>&#8377; {{data['price'][i]}}</h3>
+            <h3 style="font-size: 1.5em;" class="mt-2"><strong style="color: crimson;">Size: </strong>{{data['size'][i]}}</h3>
+            <span class="text-muted mt-2">{{data['size_fit'][i]}}</span><br>
+            <span class="card-body">
+                <h3 style="color: darkblue;">Specifications: </h3>
+                {{data['specifications'][i]}}
+            </span>
+            <div class="mt-3">
+                <a class="btn btn-primary" href="#add_btn" data-toggle="modal" data-target="#add_btn">
+                    Add To Cart
+                </a>
+                <a class="text-dark login_btn align-self-center mx-3" href="#myAdd_btn" data-toggle="modal" data-target="#myAdd_btn">
+                    <i class="fas fa-microphone"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+   
+    {% endfor %}
+    
+        
+</div>
+
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="add_btn" tabindex="-1" role="dialog" aria-labelledby="add_btn" aria-hidden="true">
+    <div class="agilemodal-dialog modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add To Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body pt-3 pb-3 px-4">
+                <div class="row m-2">
+                    <div class="col-6"><h5><strong>Product</strong></h5></div>
+                    <div class="col-2"><h5><strong>Price</strong></h5></div>
+                    <div class="col-1"><h5><strong>Size</strong></h5></div>
+                    <div class="col-1"><h5><strong>Quantity</strong></h5></div>
+                </div>
+                <hr >
+                {% for i in data.index %}
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-5">
+                                <!-- Photo -->
+                                <img src="{{data['images'][i]}}" alt="image" width="100%" height="auto" style="object-fit: cover;">
+                            </div>
+                            <div class="col-7">
+                                <!-- Details -->
+                                <h4 style="color: green;">{{data['title'][i]}}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"><h5 style="color: orange;">&#8377; {{data['price'][i]}}</h5></div>
+                    <div class="col-1" class="text-center"><h5>{{data['size'][i]}}</h5></div>
+                    <input class= " cart-quantity-input cart-header cart-column" type="number" value="1">
+                    <div class="col-2">
+                        <a class="btn btn-danger small" href="#add_btn" data-toggle="modal" data-target="#add_btn">
+                            Cancel
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+                <hr>
+                <div class="text-center">
+                    <a class="btn btn-success small" href="#add_btn" data-toggle="modal" data-target="#add_btn">
+                        Done
+                    </a>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footerv2-w3ls">
+        <div class="footer-w3lagile-innerr">
+           
+            <!-- //footer-top -->
+            <div class="footer-bottomv2 py-5">
+                <div class="container">
+                    <ul class="bottom-links-agile">
+                        <li>
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                    <h3 class="text-center follow">Follow Us</h3>
+                    <ul class="social-iconsv2 agileinfo">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     
+</footer>
+<!-- //footer -->
+ <!-- js -->
+ <script src="{{ url_for('static' , filename='js/jquery-2.2.3.min.js')}}"></script>
+ <!-- //js -->
+     <!-- script for show signin and signup modal -->
+     <script>
+        $(document).ready(function () {
+            $("#myModal_btn").modal();
+        });
+    </script>
+    <!-- //script for show signin and signup modal -->
+    <!-- smooth dropdown -->
+    <script>
+        $(document).ready(function () {
+            $('ul li.dropdown').hover(function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+            }, function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+            });
+        });
+    </script>
+    <!-- //smooth dropdown -->
+    <!-- script for password match -->
+    <script>
+        window.onload = function () {
+            document.getElementById("password1").onchange = validatePassword;
+            document.getElementById("password2").onchange = validatePassword;
+        }
+
+        function validatePassword() {
+            var pass2 = document.getElementById("password2").value;
+            var pass1 = document.getElementById("password1").value;
+            if (pass1 != pass2)
+                document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+            else
+                document.getElementById("password2").setCustomValidity('');
+            //empty string means no validation error
+        }
+    </script>
+    <!-- script for password match -->
+    <!-- Banner Responsiveslides -->
+    <script src="{{ url_for('static' , filename='js/responsiveslides.min.js')}}"></script>
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider3").responsiveSlides({
+                auto: false,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <!-- // Banner Responsiveslides -->
+    <!-- Product slider Owl-Carousel-JavaScript -->
+    <script src="{{ url_for('static' , filename='js/owl.carousel.js')}}"></script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 4,
+            loop: false,
+            margin: 10,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: false,
+            responsive: {
+                320: {
+                    items: 1,
+                },
+                568: {
+                    items: 2,
+                },
+                991: {
+                    items: 3,
+                },
+                1050: {
+                    items: 4
+                }
+            }
+        });
+    </script>
+    
+    <script src="{{ url_for('static' , filename='js/minicart.js')}}">
+    </script>
+    <script>
+        hub.render();
+
+        hub.cart.on('new_checkout', function (evt) {
+            var items, len, i;
+
+            if (this.subtotal() > 0) {
+                items = this.items();
+
+                for (i = 0, len = items.length; i < len; i++) {}
+            }
+        });
+    </script>
+    <script src="{{ url_for('static' , filename='js/move-top.js')}}"></script>
+    <script src="{{ url_for('static' , filename='js/easing.js')}}"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--script for quantity in cart modal-->
+    <!-- <script>
+        
+        function ready() {
+    
+
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i]
+        input.addEventListener('change', quantityChanged)
+    }
+
+    
+
+    // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+}
+        function quantityChanged(event) {
+            var input = event.target
+            if (isNaN(input.value) || input.value <= 0) {
+                input.value = 1
+            }
+
+        }
+    </script> -->
+
+ <script src="{{ url_for('static' , filename='js/SmoothScroll.min.js')}}"></script>
+    <script src="{{ url_for('static' , filename='others/aos/aos.js')}}"></script>
+    <script src="{{ url_for('static' , filename='others/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{ url_for('static' , filename='others/glightbox/js/glightbox.min.js')}}"></script>
+    <script src="{{ url_for('static' , filename='others/swiper/swiper-bundle.min.js')}}"></script>
+    <script src="{{ url_for('static' , filename='js/main.js')}}"></script>
+    <script src="{{ url_for('static' , filename='js/bootstrap.js')}}"></script>
+</body>
+</html>
